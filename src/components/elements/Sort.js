@@ -24,8 +24,8 @@ const Sort = props => {
     <div>
       <label>Sort By:</label>
       <div>{sortElements}</div>
-      <p>Green = Ascending</p>
-      <p>Blue = Descending</p>
+      <p>Green = Descending</p>
+      <p>Blue = Ascending</p>
     </div>
   );
 };

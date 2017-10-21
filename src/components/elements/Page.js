@@ -1,14 +1,23 @@
 import React from "react";
 
 const Page = props => {
-  const { photolist, value, onChange, name } = props;
+  const { photolist, value, onChange, name, perPage } = props;
   let pageElements = [];
-  for (var i = 1; i < photolist.length / 12 + 1; i++) {
+  if (perPage <= 0) {
     pageElements.push(
-      <option key={i} value={i}>
-        {i}
+      <option key={1} value={1}>
+        {" "}
+        1{" "}
       </option>
     );
+  } else {
+    for (var i = 1; i < photolist.length / perPage + 1; i++) {
+      pageElements.push(
+        <option key={i} value={i}>
+          {i}
+        </option>
+      );
+    }
   }
 
   return (
