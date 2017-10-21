@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 
-import Photos from "./Photos";
+import Search from "./Search";
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
           <h1>React Photo Gallery</h1>
         </header>
         <div className="App-body container">
-          <Photos />
+          <Search />
         </div>
       </div>
     );

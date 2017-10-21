@@ -3,3 +3,21 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.bordered {
+  border: 2px solid black;
+  border-radius: 2em;
+}
+
+.singlePhoto {
+  word-wrap: break-word;
+}
+
+.singlePhoto img {
+  height: auto;
+  width: 75%;
+}
+
+.singlePhoto:hover {
+  background-color: rgba(220, 220, 255, 0.5);
+}
