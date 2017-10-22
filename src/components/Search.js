@@ -38,7 +38,7 @@ class Search extends Component {
     this.setState({
       [e.target.name]: e.target.value
     });
-    console.log("change", e.target.name, e.target.value);
+    //console.log("change", e.target.name, e.target.value);
   };
 
   handleClick = e => {
@@ -53,7 +53,7 @@ class Search extends Component {
         return { [targeted]: 0 };
       }
     });
-    console.log("click was", e.target.name, e.target.value);
+    //console.log("click was", e.target.name, e.target.value);
   };
 
   render() {

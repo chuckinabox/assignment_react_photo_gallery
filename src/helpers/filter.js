@@ -17,7 +17,6 @@ export function filterPage(photoList, perPageString, pageValue) {
   if (perPage > 0) {
     let minimum = 1 + perPage * (pageValue - 1);
     let maximum = perPage + perPage * (pageValue - 1);
-    console.log(minimum, maximum);
     let photosToShow = photoList.slice(minimum - 1, maximum);
     return photosToShow;
   } else {
