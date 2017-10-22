@@ -13,6 +13,7 @@ import {
 import Filter from "./elements/Filter";
 import SinglePhoto from "./elements/SinglePhoto";
 import Page from "./elements/Page";
+import PerPage from "./elements/PerPage";
 import Sort from "./elements/Sort";
 import SearchField from "./elements/SearchField";
 
@@ -22,7 +23,7 @@ class Search extends Component {
     this.state = {
       filterValue: "No Filter",
       pageValue: 1,
-      perPage: 12,
+      perPage: 1,
       sortdate: 0,
       sortlikes: 0,
       sortcomments: 0,
@@ -129,6 +130,13 @@ class Search extends Component {
               value={pageValue}
               onChange={this.onChangeSearch}
               perPage={perPage}
+            />
+          </div>
+          <div className="col-sm-1">
+            <PerPage
+              name="perPage"
+              value={perPage}
+              onChange={this.onChangeSearch}
             />
           </div>
           <div className="col-sm-4">
